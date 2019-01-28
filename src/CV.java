@@ -18,6 +18,17 @@ public class CV {
 		
 	}
 	
-	
+	public void affiche() {
+		System.out.println("Nom: " + nom +
+						   "\nPrénom: " + prenom +
+						   "\nFormation: " + formation +
+						   "\nExpériences de travail: " + nbAnnees + "ans");
+		System.out.println("\nCompetences: ");
+		for(int i=0; i<competences.length; i++) {
+			System.out.print(competences[i] + ", ");
+		}
+		System.out.println();
+		System.out.println("\nAttentes: " + attentes);
+	}
 	
 }
